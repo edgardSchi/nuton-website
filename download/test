@@ -1,0 +1,45 @@
+v0.5
+
+	Fixed
+		-Fehler bei den neuen Toolbar Buttons gefixed
+		-Fehler bei Diagrammen gefixed
+		-ThemeLoader wird nur noch einmal initialisiert
+		-Fehlermeldung für ffmpeg behoben
+		-Vektoren können nun gelöscht werden
+		
+	Added
+		-ListViews durch TableView ersetzt
+		-Punkte werden jetzt mit dem Fenster skaliert
+		-Neues Settings Fenster
+		-Zu ffmpeg können zusätzliche Argumente hinzugefügt werden
+		-Die Punkte und Eichung können ein- oder ausgeblendet werden
+		-Ein neues Theme zum downloaden
+		-Es wird keine Richtung der Translation in den Einstellungen benötigt, es werden beide Richtungen analysiert
+		-Speichern und Laden von Projekten
+		-Beim Start werden nach Updates gesucht
+
+	To Do 
+		-Settings Fenster überarbeiten --fertig
+		-Custom Behfehl für ffmpeg bei den Settings --fertig
+		-Exception für ffmpeg nicht gefunden --fertig
+		-Punkt löschen Button für Vektoren --fertig
+		-ShowPoints und ShowDistance für Kreisbewegungen --fertig
+		-Calibrate Events vereinfachen --fertig
+		-ToolTip für ffmpeg Argumente überarbeiten --fertig
+		-Theme erstellen --fertig
+		-Für Translation Richtung entfernen und stattdessen beide Diagramme anzeigen --fertig
+		-Speichern --fertig
+		-Laden --fertig
+		
+		
+		-Rechteck- und Ellipsentool überarbeiten --später
+		
+		
+		-Circle State Points überprüfen und Calibrate anpassen
+		-Hilfebutttons ins Programm einfügen
+		-Rohdatenexport erweitern auch für Kreisbewegungen
+		-Limit für Eichung zentraliesieren
+		-Tracking
+		-Alte Settings Klassen und Fenster löschen
+		-ffmpeg Ladebalken
+		-Bug fixen, der beim Löschen eines Punktes entsteht
