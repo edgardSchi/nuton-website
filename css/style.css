@@ -152,3 +152,8 @@ header #title_box{
 .überschrift {
   animation: boxes_animation 3s;
 }
+
+#download_nuton li{
+  float: left;
+  display: inline;
+}
