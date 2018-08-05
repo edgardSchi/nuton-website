@@ -27,14 +27,50 @@
       </nav>
     </div>
     </header>
-    <h3 class="download_überschrift">Nuton</h3>
-    <div id="download_border"></div>
       <section id="download_nuton">
-        Hier finden Sie die aktuellste Version von Nuton:
-          <section id="download_link">
-            <li><a href="download/nuton.jar">Nuton Version 1.0</a></li>
-          </section>
+        <button id="download_button" type="button" onclick="window.location.href='download/nuton.jar'">Herunterladen</button>
       </section>
-      <h3 class="download_überschrift">Themes<h3>
+      <h3 class="download_überschrift">Git<h3>
+      <div id="border"></div>
+      <section class="download_section">
+        <section class="download_section_button">
+          <button id="code_download" type="button" onclick="window.location.href='download/nuton_code.zip'">Quellcode herunterladen</button>
+        </section>
+        <pre> Der Quellcode kann über Git mit diesem Befehl heruntergeladen werden: </pre>
+        <pre id="git_command">git clone https://github.com/edgardSchi/nuton.git</pre>
+      </section>
+      <h3 class="download_überschrift">Versionen<h3>
+      <div id="border"></div>
+      <section class="download_section">
+        <h4>Version 1.0</h4>
+        <div id="changelog_div">
+          <pre>Die erste Version von Nuton wurde am 12.06.2018 veröffentlicht.
+Changelog:</pre>
+          <pre class="changelog">
+Hinzugefügt
+  -ListViews durch TableView ersetzt
+  -Punkte werden jetzt mit dem Fenster skaliert
+  -Neues Settings Fenster
+  -Zu ffmpeg können zusätzliche Argumente hinzugefügt werden
+  -Die Punkte und Eichung können ein- oder ausgeblendet werden
+  -Ein neues Theme zum downloaden
+  -Es wird keine Richtung der Translation in den Einstellungen benötigt, es werden beide Richtungen analysiert
+  -Speichern und Laden von Projekten
+  -Updates können gesucht werden
+  -Trackingfunktion
+  -Rohdaten für Kreisbewegung wurden erweitert
+
+Gefixed:
+  -Fehler bei den neuen Toolbar Buttons gefixed
+  -Fehler bei Diagrammen gefixed
+  -ThemeLoader wird nur noch einmal initialisiert
+  -Fehlermeldung für ffmpeg behoben
+  -Vektoren können nun gelöscht werden
+          </pre>
+          <section class="download_section_button">
+            <button id="code_download" type="button" onclick="window.location.href='download/nuton.jar'">Herunterladen</button>
+          </section>
+        </div>
+      </section>
   </body>
 </html>

@@ -3,10 +3,11 @@
 * {
   padding: 0;
   margin: 0;
+  color: #e2e2e2;
 }
 
 body{
-  background-color: #dfe4ea;
+  background-color: #202d3a;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -16,6 +17,18 @@ body{
 
 /*Header*/
 
+button {
+  border: none;
+  background-color: #cc2424;
+}
+
+#download_button:hover {
+  background-color: #b21e1e;
+}
+
+button:hover {
+  background-color: #b21e1e;
+}
 
 
 header {
@@ -29,7 +42,6 @@ header {
 
 header #title {
   font-size: 40px;
-  color: #fff;
   float: left;
   font-family: 'Arial', sans-serif;
   padding-left: 30px;
@@ -45,7 +57,6 @@ header #logo{
 header a{
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -69,8 +80,11 @@ header nav {
   display: inline;
 }
 
+header a:hover {
+  color: #cc2424;
+}
+
 header .highlight, header .current a{
-  color: #fff;
   font-weight: bold;
   font-family: 'Germania One', cursive;
   font-size: 85px;
@@ -92,46 +106,18 @@ header #title_box{
   -moz-animation: header_animation 3s forwards;
 }
 
+#main_info {
+  color: #000;
+}
+
 .überschrift {
   padding-top: 35px;
   font-size: 30px;
   text-align: center;
+  margin-bottom: -10px;
 }
 
-.download_überschrift {
-  padding-top: 35px;
-  font-size: 30px;
-  padding-left: 15%;
-}
-
-#download_border {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 70%; /* Change this to whatever width you want. */
-  padding-top: 3px; /* This creates some space between the element and the border. */
-  border-bottom: 2px solid gray; /* This creates the border. Replace black with whatever color you want. */
-}
-
-#border {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 70%; /* Change this to whatever width you want. */
-  padding-top: 20px; /* This creates some space between the element and the border. */
-  border-bottom: 2px solid gray; /* This creates the border. Replace black with whatever color you want. */
-}
-
-#download_nuton {
-  content: "";
-  margin: 0 auto;
-  margin-top: 20px;
-  display: block;
-  padding-left: 15%;
-  font-size: 23px;
-}
-
-#allgemeines {
+#infobox {
   content: "";
   margin: 0 auto;
   margin-top: 20px;
@@ -140,6 +126,44 @@ header #title_box{
   width: 70%;
   text-align: center;
   font-size: 23px;
+  color: #000;
+}
+
+.download_überschrift {
+  font-size: 25px;
+  padding-top: 35px;
+  margin-bottom: -22px;
+  padding-left: 10%;
+}
+
+#download_border {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 3px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid gray; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#border {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-bottom: 2px solid gray; /* This creates the border. Replace black with whatever color you want. */
+}
+
+#download_nuton {
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  font-size: 23px;
+  text-align: center;
+}
+
+#download_nuton pre {
+  font-size: 15px;
 }
 
 @keyframes boxes_animation {
@@ -150,10 +174,72 @@ header #title_box{
 }
 
 .überschrift {
-  animation: boxes_animation 3s;
+  animation: boxes_animation 0.5s;
 }
 
-#download_nuton li{
-  float: left;
-  display: inline;
+#download_button {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-size: 20px;
+  background-color: #cc2424;
+  border: none;
+  margin-top: 30px;
+  padding: 3% 7%;
+}
+
+.download_section {
+  background-color: #2c3e50;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  width: 80%;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.download_section_button {
+  text-align: center;
+}
+
+.download_section #git_command {
+  color: #000;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-style: solid;
+  border-color: #e2e2e2;
+  background-color: #e2e2e2;
+  border-radius: 3px;
+}
+
+.download_section pre {
+  margin-top: 10px;
+  margin-left: 9px;
+  margin-bottom: -10px;
+  overflow: auto;
+}
+
+.download_section h4 {
+  margin-left: 9px;
+}
+
+#code_download {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 1% 2%;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.changelog {
+  color: #000;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: #e2e2e2;
+  background-color: #e2e2e2;
+  border-radius: 3px;
+}
+
+#changelog_div button {
+  margin-top: 30px;
 }
